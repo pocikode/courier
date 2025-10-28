@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+  <object class="wxFrame" name="MainFrame">
+    <size>1024,768</size>
+    <style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+    <title></title>
+    <centered>1</centered>
+    <aui_managed>0</aui_managed>
+    <object class="wxSplitterWindow" name="topLevelSplitter">
+      <style>wxSP_3D</style>
+      <sashpos>300</sashpos>
+      <gravity>0</gravity>
+      <minsize>0</minsize>
+      <orientation>vertical</orientation>
+      <object class="wxPanel" name="sidebarPanel">
+        <style>wxTAB_TRAVERSAL</style>
+        <object class="wxBoxSizer" name="sidebarSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>5</border>
+            <option>0</option>
+            <object class="wxStaticText" name="sidebarLogo">
+              <style>wxALIGN_CENTER_HORIZONTAL</style>
+              <fg>#314f78</fg>
+              <font>
+                <size>20</size>
+                <style>normal</style>
+                <weight>bold</weight>
+                <family>default</family>
+                <underlined>0</underlined>
+              </font>
+              <label>Courier</label>
+              <wrap>-1</wrap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>5</border>
+            <option>0</option>
+            <object class="wxListBox" name="m_listBox1">
+              <content>
+                <item>Dashboard</item>
+                <item>Settings</item>
+                <item>About</item>
+                <item></item>
+              </content>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="wxPanel" name="contentPanel">
+        <style>wxTAB_TRAVERSAL</style>
+        <object class="wxBoxSizer" name="contentSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag>wxEXPAND | wxALL</flag>
+            <border>5</border>
+            <option>1</option>
+            <object class="wxSimplebook" name="pageBook">
+              <object class="simplebookpage">
+                <label>a page</label>
+                <selected>0</selected>
+                <object class="wxPanel" name="homePanel">
+                  <style>wxTAB_TRAVERSAL</style>
+                  <object class="wxBoxSizer" name="homePageSizer">
+                    <orient>wxVERTICAL</orient>
+                    <object class="sizeritem">
+                      <flag>wxALL</flag>
+                      <border>5</border>
+                      <option>0</option>
+                      <object class="wxStaticText" name="m_staticText2">
+                        <label>Dashboard</label>
+                        <wrap>-1</wrap>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <flag>wxEXPAND | wxALL</flag>
+                      <border>5</border>
+                      <option>0</option>
+                      <object class="wxStaticLine" name="m_staticline1">
+                        <style>wxLI_HORIZONTAL</style>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <flag>wxALL|wxEXPAND</flag>
+                      <border>5</border>
+                      <option>0</option>
+                      <object class="wxTextCtrl" name="m_textCtrl1">
+                        <value>&quot;Welcome! Select an item on the left.</value>
+                        <maxlength>0</maxlength>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="simplebookpage">
+                <label>a page</label>
+                <selected>0</selected>
+                <object class="wxPanel" name="settingsPanel">
+                  <style>wxTAB_TRAVERSAL</style>
+                  <object class="wxBoxSizer" name="settingsPageSizer">
+                    <orient>wxVERTICAL</orient>
+                    <object class="sizeritem">
+                      <flag>wxALL</flag>
+                      <border>5</border>
+                      <option>0</option>
+                      <object class="wxTextCtrl" name="m_textCtrl2">
+                        <value>Settings</value>
+                        <maxlength>0</maxlength>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <flag>wxEXPAND | wxALL</flag>
+                      <border>5</border>
+                      <option>0</option>
+                      <object class="wxStaticLine" name="m_staticline2">
+                        <style>wxLI_HORIZONTAL</style>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <flag>wxALL|wxEXPAND</flag>
+                      <border>5</border>
+                      <option>0</option>
+                      <object class="wxTextCtrl" name="m_textCtrl3">
+                        <value>This is Settings</value>
+                        <maxlength>0</maxlength>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="simplebookpage">
+                <label>a page</label>
+                <selected>0</selected>
+                <object class="wxPanel" name="aboutPanel">
+                  <style>wxTAB_TRAVERSAL</style>
+                  <object class="wxBoxSizer" name="aboutPageSizer">
+                    <orient>wxVERTICAL</orient>
+                    <object class="sizeritem">
+                      <flag>wxALL</flag>
+                      <border>5</border>
+                      <option>0</option>
+                      <object class="wxTextCtrl" name="m_textCtrl4">
+                        <value>About</value>
+                        <maxlength>0</maxlength>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <flag>wxEXPAND | wxALL</flag>
+                      <border>5</border>
+                      <option>0</option>
+                      <object class="wxStaticLine" name="m_staticline3">
+                        <style>wxLI_HORIZONTAL</style>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</resource>
